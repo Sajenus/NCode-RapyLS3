@@ -1,0 +1,48 @@
+# Czas bana w godzinach
+czas-bana: 5
+
+# Wypadanie serca po śmierci naturalnej
+# true - serce wypada z gracza niezależnie od tego jak zginął
+# false - serce wypada z gracza tylko gdy zginął od innego gracza
+wypadanie: false
+
+# System anty-nabijania serc
+# true - Gdy gracz zostanie zabity przez gracza o tym samym adresie IP to serce znika, nikt go nie dostaje
+# false - Wyłączenie tego systemu
+anty-nabijanie: true
+
+
+# Serca
+serce-1:
+  type: RED_DYE
+  name: "&c&lSerce I"
+  lore:
+    - "&fSerce poziomu 1"
+    - "&7Aby go użyć,"
+    - "&7musisz mieć &c1-9❤"
+  glint: true
+  custom-model-data: 1
+  serca-min: 1
+  serca-max: 10
+serce-2:
+  type: ORANGE_DYE
+  name: "&6&lSerce II"
+  lore:
+    - "&fSerce poziomu 2"
+    - "&7Aby go użyć,"
+    - "&7musisz mieć &c10-19❤"
+  glint: true
+  custom-model-data: 1
+  serca-min: 11
+  serca-max: 20
+serce-3:
+  type: YELLOW_DYE
+  name: "&e&lSerce III"
+  lore:
+    - "&fSerce poziomu 3"
+    - "&7Aby go użyć,"
+    - "&7musisz mieć &c20-29❤"
+  glint: true
+  custom-model-data: 1
+  serca-min: 21
+  serca-max: 30

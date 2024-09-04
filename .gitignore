@@ -1,0 +1,8 @@
+### IntelliJ ###
+*.iml
+
+# Ignore IDEA directory
+.idea/
+
+### Maven ###
+target/

@@ -1,0 +1,16 @@
+name: NCode-RapyLS3
+version: ${project.version}
+main: me.sajen.rapyls3.Main
+api-version: '1.16'
+author: Sajen
+commands:
+  rapyls:
+    permission: ncode.rapyls3.rapyls
+  wyplac:
+    permission: ncode.rapyls3.wyplac
+
+permissions:
+  ncode.rapyls3.rapyls:
+    default: op
+  ncode.rapyls3.wyplac:
+    default: true
