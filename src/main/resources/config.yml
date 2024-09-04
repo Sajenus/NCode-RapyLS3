@@ -1,3 +1,12 @@
+# >>>  > ------------------ <  <<<
+# >>>      NCode-RapyLS3       <<<
+# >>>   by Sajen (dc: sajen)   <<<
+# >>>  > ------------------ <  <<<
+
+# >--------<
+#   OGÓLNE
+# >--------<
+
 # Czas bana w godzinach
 czas-bana: 5
 
@@ -11,8 +20,9 @@ wypadanie: false
 # false - Wyłączenie tego systemu
 anty-nabijanie: true
 
-
-# Serca
+# >-------<
+#   SERCA
+# >-------<
 serce-1:
   type: RED_DYE
   name: "&c&lSerce I"
