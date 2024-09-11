@@ -1,3 +1,3 @@
 # NCode-RapyLS3
 
-Plugin na Lifesteal z sezonu 2 Rapy.PL
+Plugin na Lifesteal z sezonu 3 Rapy.PL
