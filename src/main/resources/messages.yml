@@ -82,7 +82,7 @@ powod-bana:
 blad-sprawdzania-bana: "&cWystąpił problem podczas sprawdzania Twojego bana. Skontaktuj się z administracją."
 wyplac-konsola: "Musisz byc graczem aby uzyc tej komendy"
 wyplac-poprawne-uzycie: "&cPoprawne użycie: &4/wyplac"
-wyplac-jedno-serce: "&cNie możesz wypłacić serca gdy masz tylko jedno!"
+wyplac-jedno-serce: "&cMasz za mało serc żeby wypłacić!"
 wyplacono-serce-1: "&aWypłacono &c&lSerce I&a"
 wyplacono-serce-2: "&aWypłacono &6&lSerce II&a"
 wyplacono-serce-3: "&aWypłacono &e&lSerce III&a"

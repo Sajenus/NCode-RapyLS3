@@ -20,6 +20,9 @@ wypadanie: false
 # false - Wyłączenie tego systemu
 anty-nabijanie: true
 
+# Minimalna ilość serc jaką można mieć wypłacając
+min-withdraw: 1
+
 # >-------<
 #   SERCA
 # >-------<

@@ -25,18 +25,21 @@ public class WithdrawCmd implements CommandExecutor, TabCompleter {
             player.sendMessage(Main.Color(MessagesConfig.getString("wyplac-poprawne-uzycie")));
             return true;
         }
-        double health = player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
+        double health = player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() / 2;
 
-        // Gracz ma jedno serce
-        if (health == 2) {
+        // Gracz nie może wypłacić
+        if (health <= Main.get().getConfig().getInt("min-withdraw")) {
             player.sendMessage(Main.Color(MessagesConfig.getString("wyplac-jedno-serce")));
             return true;
         }
 
-        if (health <= 20) {
+        int maxHearts1 = Main.get().getConfig().getInt("serce-1.serca-max");
+        int maxHearts2 = Main.get().getConfig().getInt("serce-2.serca-max");
+
+        if (health <= maxHearts1) {
             player.getInventory().addItem(Main.heart(1));
             player.sendMessage(Main.Color(MessagesConfig.getString("wyplacono-serce-1")));
-        } else if (health <= 40) {
+        } else if (health <= maxHearts2) {
             player.getInventory().addItem(Main.heart(2));
             player.sendMessage(Main.Color(MessagesConfig.getString("wyplacono-serce-2")));
         } else {
@@ -44,7 +47,7 @@ public class WithdrawCmd implements CommandExecutor, TabCompleter {
             player.sendMessage(Main.Color(MessagesConfig.getString("wyplacono-serce-3")));
         }
 
-        player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(health - 2);
+        player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(health * 2 - 2);
         return true;
     }
 
